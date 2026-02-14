@@ -1,6 +1,6 @@
 # Nexus Script
 
-This module allows you to create **Nexus Script as a global resource** and **individual Nexus Script resources.** For individual examples, see the usage snippets and [examples](https://github.com/devops-ia/terraform-nexus-script/tree/main/examples).
+This module allows you to create **Nexus Script as a global resource** and **individual Nexus Script resources.** For individual examples, see the usage snippets and [examples](https://github.com/nexus-module/terraform-nexus-script/tree/main/examples).
 
 ## Provider
 You need use a [Nexus provider](https://registry.terraform.io/providers/datadrivers/nexus/latest/docs).
@@ -18,7 +18,7 @@ provider "nexus" {
 
 ```hcl
 module "nexus_script" {
-  source  = "devops-ia/script/nexus/"
+  source  = "nexus-module/script/nexus/"
 
   nexus_script = [
     {
@@ -36,7 +36,7 @@ module "nexus_script" {
 
 ```hcl
 module "nexus_script" {
-  source  = "devops-ia/script/nexus//modules/nexus-script"
+  source  = "nexus-module/script/nexus//modules/nexus-script"
 
   name    = "create-repo-pypi-internal"
   type    = "groovy"
@@ -81,4 +81,4 @@ No resources.
 
 ## Authors
 
-Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/devops-ia/terraform-nexus-script/graphs/contributors).
+Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/nexus-module/terraform-nexus-script/graphs/contributors).
